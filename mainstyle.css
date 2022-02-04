@@ -100,9 +100,14 @@ nav{
 
 .img{
     display: block;
-    width: 50%;
     margin: auto; 
 }
+
+.image{
+    width: 10%;
+    height: auto;
+}
+
 
 .topbar{
         margin: auto;
@@ -118,7 +123,7 @@ nav{
     font-weight: 400;
     letter-spacing: 1px;
     padding-top: 10px;
-    padding-bottom: 0px;
+    padding-bottom: 10px;
     
 }
 
@@ -126,6 +131,7 @@ nav{
     color: #fff;
     font-size: 50px;
     font-weight: 600;
+    line-height: 56px;
 }
 
 #line_septor{
@@ -171,7 +177,8 @@ nav{
 #main{
   background: #ff8686;
   grid-area: main;
-  border-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
   margin-top: -0.5rem !important;
   width: 630px;
   height: 150px;
@@ -179,6 +186,65 @@ nav{
   padding: 0px;
   box-shadow: 0px 4px 20px 1px rgba(251, 167, 167, 0.21);
 }
+
+/*--.........................................................-*/
+
+
+
+#slider {
+	overflow: hidden;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 150px;
+}
+#slider figure {
+	position: relative;
+	width: 500%;
+	margin: 0;
+	left: 0;
+	animation: 20s slider infinite;
+    
+}
+#slider figure img {
+	width: 20%;
+	float: left;
+    
+}
+
+@keyframes slider {
+	0% {
+		left: 0;
+	}
+	20% {
+		left: 0;
+	}
+	25% {
+		left: -100%;
+	}
+	45% {
+		left: -100%;
+	}
+	50% {
+		left: -200%;
+	}
+	70% {
+		left: -200%;
+	}
+	75% {
+		left: -300%;
+	}
+	95% {
+		left: -300%;
+	}
+	100% {
+		left: -400%;
+	}
+}
+
+/*--.........................................................-*/
+
+
+
 
 .annouce{
     color: #fff;
@@ -215,7 +281,7 @@ nav{
 #myBtn { 
   position: fixed; 
   bottom: 20px; 
-  right: 500px; 
+  right: 650px; 
   z-index: 99; 
   border: none; 
   outline: none; 
@@ -472,7 +538,214 @@ footer {
 
 
 
-/*-----------------------------------------------------------------RESPONSIVE MEDIA-----------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----------------------------------------------------------------RESPONSIVE MEDIA 1400-----------------------------------------------*/
+
+
+@media only screen and (max-width: 1400px) {
+  .container {
+  display: grid;
+  height: 160vh;
+  justify-content: center;
+  grid-template-columns: 2fr 2fr;
+  grid-auto-rows: 0.2fr 0.2fr 0.1fr 0.1fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.1fr;
+  grid-template-areas:
+      
+    "nav nav"
+    "main main"
+    "content1 content2"
+    "content3 content4"
+    "content5 content6"
+    "content7 content8"
+    "content9 content10"
+    "content11 content12"
+    "content13 content14"
+    "content15 content16"
+    "content17 content18"
+    "content19 content20"
+    "content21 content22"
+    "content23 content24"
+    "content25 content26"
+    "footer footer";
+    
+  grid-gap: 0.5rem;
+  /*--text-transform: uppercase;#FCFBFB--*/
+  margin-top: 0px;
+  width: 660px;
+  margin: auto;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  background-color: #fff1f1;
+  border-radius: 10px;
+  box-shadow: 0px 4px 20px 1px rgba(251, 167, 167, 0.51);
+    
+}
+    nav{
+    padding: 0px;
+    margin: 0px;
+    width: 660px;
+    margin: auto;
+       
+}
+    
+    
+  #main{
+      width: 630px !important;
+    }
+       
+    #myBtn{
+     
+        margin-right: -300px;
+    }
+    
+    
+}
+/*-------------------------------------------RESPONSIVE MEDIA END-----------------------------------*/
+
+
+
+
+
+
+
+
+/*-----------------------------------------------------------------RESPONSIVE MEDIA 750-----------------------------------------------*/
+
+
+@media only screen and (max-width: 750px) {
+  .container {
+      display: grid;
+    height: 160vh;
+      justify-content: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.02fr 0.2fr 1.2fr 1.2fr 1.2fr 1.2fr 1.2fr 1.2fr 1fr;
+    grid-template-areas:
+      "nav"
+      "main"
+      "content1"
+      "content2"
+      "content3"
+      "content4"
+      "content5"
+      "content6"
+      "content7"
+      "content8"
+      "content9"
+      "content10"
+      "content11"
+      "content12"
+      "content13"
+      "content14"
+      "content15"
+      "content16"
+      "content17"
+      "content18"
+      "content19"
+      "content20"
+      "content21"
+      "content22"
+      "content23"
+      "content24"
+      "content25"
+      "content26"
+      "footer";
+    grid-gap: 0.5rem;
+  /*--text-transform: uppercase;#FCFBFB--*/
+  margin-top: 0 !important;
+  width: 460px;
+  margin: auto;
+  margin-bottom: 0 !important;
+  background-color: #fff1f1;
+  border-radius: 10px;
+  box-shadow: 0px 4px 20px 1px rgba(251, 167, 167, 0.51);
+      
+  }
+    
+    nav{
+    padding: 0px;
+    margin: 0px;
+    width: 480px;
+    margin: auto;
+       
+}
+    
+  #main{
+      width: 430px !important;
+       
+    }
+    .sticky{
+        margin-right: 40px !important;
+    }
+    #note_msg{
+        
+        font-size: 8px !important;
+    }
+    
+    
+    .thumbnail_1{
+    height: auto;
+    width: 100%;
+    margin-left: -80px !important;
+    
+    }
+    
+    #content2{
+    margin-top: -40px !important;
+    margin: auto;
+    padding: 25px;
+    padding-top: 30px;
+    }
+    
+    .title{
+    font-size: 20px;
+    }
+    
+    
+    .downld_btns{
+    display: flex;
+    margin-right: 0px !important;
+    margin: auto;
+    justify-content: center;
+    }
+
+    .dwn_contr{
+    margin-right: 0 !important;
+    padding: 20px;
+    text-align: center;
+    }
+
+    #myBtn {
+    right: 90px;
+    bottom: 26px;
+    }
+
+    footer{
+        width: 460px;
+    }
+    
+    
+}
+/*-------------------------------------------RESPONSIVE MEDIA END-----------------------------------*/
+
+
+
+
+
+
+
+
+/*-----------------------------------------------------------------RESPONSIVE MEDIA 550-----------------------------------------------*/
 
 
 @media only screen and (max-width: 550px) {
@@ -578,7 +851,7 @@ footer {
     }
 
     #myBtn {
-    right: 20px;
+    right: 30px;
     bottom: 26px;
     }
 
@@ -586,13 +859,17 @@ footer {
         width: 460px;
     }
     
+    #slider figure {
+	width: 1000%;
+    }
+    
     
 }
 /*-------------------------------------------RESPONSIVE MEDIA END-----------------------------------*/
 
 
-/*-----------------------------------------------------------------RESPONSIVE MEDIA - IPHONE ---------....................---------------------------*/
-@media only screen and (max-width: 375px) {
+/*-----------------------------------------------------------------RESPONSIVE MEDIA - IPHONE -480 ---------....................---------------------------*/
+@media only screen and (max-width: 480px) {
   .container {
       display: grid;
     height: 180vh;
@@ -663,8 +940,8 @@ footer {
     .thumbnail_1{
     
     height: auto;
-    width: 90%;
-    margin-left: -20px !important;
+    width: 100%;
+    margin-left: -80px !important;
     
     }
     
@@ -697,6 +974,12 @@ footer {
     footer{
         width: 350px;
     }
+    
+    
+    #slider figure {
+	width: 1000%;
+    }
+    
 }
 
 
