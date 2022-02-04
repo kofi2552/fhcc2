@@ -26,7 +26,7 @@ body {
 
 .container {
   display: grid;
-  height: 140vh;
+  height: 160vh;
   justify-content: center;
   grid-template-columns: 2fr 2fr;
   grid-auto-rows: 0.2fr 0.2fr 0.1fr 0.1fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.1fr;
@@ -106,7 +106,6 @@ nav{
 
 .topbar{
         margin: auto;
-        
         padding-bottom: 20px;
         padding-top: 20px;
         text-align: center;
@@ -212,25 +211,76 @@ nav{
 
 /*---------------------------------------------   FOOTER SECTION  ------------------------------------#d87e7e------------*/
 
-#myBtn {
-  display: none; 
+
+#myBtn { 
   position: fixed; 
   bottom: 20px; 
-  right: 20px; 
+  right: 500px; 
   z-index: 99; 
   border: none; 
   outline: none; 
-  background-color: #ff8686; 
-  color: #fff;
+  background-color: rgba(255, 179, 179, 0.24); 
+  color: #ffb6b6;
   cursor: pointer; 
-  padding: 15px; 
-  border-radius: 15px; 
+  padding: 12px; 
+  border-radius: 163px; 
   font-size: 16px; 
 }
 
 #myBtn:hover {
-  background-color: #fff;
-  color: #ff8686;
+  background-color: rgba(255, 179, 179, 0.83);
+  color: #fff;
+    outline: none;
+}
+
+
+
+.footer-col h4{
+    display: none;
+	font-size: 12px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 15px;
+	font-weight: 500;
+	position: relative;
+    padding-top: 0px;
+}
+
+
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 10px;
+}
+
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover{
+	color: #ff8686;
+	background-color: #ffffff;
 }
 
 
@@ -241,10 +291,14 @@ footer {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   margin-top: 10px;
-    margin-bottom: 0;
-   padding: 0px;
-  
+  margin-bottom: 0;
+  padding: 0px;
+  width: 660px;
+  margin:auto;
+  text-align: center;
+  padding: 30px;
 }
+
 
 .btm_main{
     display: flex;
@@ -280,19 +334,11 @@ footer {
 }
 
 
-.go_up{
+.go-up{
     display: flex;
-    position: relative;
-    font-size: 16px;
-    width: 30px;
-    height: 50px;
-    text-align: center;
-    color:#e34444; 
-    background-color: #fafafa;
-    margin-bottom: 15px;
-    margin-right: 120px;
-    border-radius: 15px;
-    box-shadow: 0px 4px 20px 1px rgba(85, 85, 85, 0.21);
+    width: 600px;
+    margin: auto;
+    
 } 
 
 
@@ -307,21 +353,23 @@ footer {
 .image_contr{
     display: flex;
     justify-content: center;
-    padding: 30px;
+    padding-left: 20px;
+    padding-top: 20px;
+    margin-left: 30px;
     
 }
 
 #content1 { 
     /*background: #fafafa;*/
     grid-area: content1;
-    margin-left: 20px;
+    margin-left: 30px;
 }
 
 .thumbnail_1{
     display: block;
     border-radius: 5px;
     height: auto;
-    width: 90%;
+    width: 100%;
     box-shadow: 0px 4px 20px 1px rgba(251, 167, 167, 0.71); 
 }
 
@@ -330,57 +378,93 @@ footer {
 
 
 #content2 {
-  /*background: #fafafa;*/
+  
   grid-area: content2;
   padding-top: 30px;
+    margin-left: 26px;
 }
 
 .title{
     color: #4b4b4b;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 800;
-    line-height: 25px;
+    line-height: 23px;
+}
+.art_name{
+    font-size: 16px;
+    font-weight: 200;
+    margin-top: 5px;
 }
 
-
 .dwn_contr{
-    padding: 16px;
-    margin-right: 30px;
+    padding: 0;
+    margin-right: 20px;
 }
 
 .downld_btns{
-    padding-top: 14px;
-    justify-content: space-between;
-    margin-right: 25px;
+    justify-items: center;
+    padding-top: 10px;
+    margin: auto;
+    cursor: pointer;
 }
 
-
-
-button{
-    font-size: 12px;
-    border-radius: 10px;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    padding-left: 15px;
-    padding-right: 15px;
-    outline: none;
-    border: none;
-}
-
-button:hover{
-    background-color: #F84B4B;
-    
-}
 
 .lbtn{
     color: #fff;
-    background-color: #d32323;
+    background-color: #ef4c4c;
     margin-right: 40px;
 }
+
 .bttn{
+    display: flex;
+    height: 45px;
+    padding: 0 20px;
     color: #fff;
-    background-color: #d32323;
+    background: #ef4c4c;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    overflow: hidden;
+    font-size: 10px;
+    font-weight: 500;
+    align-items: center;
 }
+
+.butto{
+    display: flex;
+    height: 45px;
+    padding: 0;
+    background: #ef4c4c;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    overflow: hidden;
+    font-size: 10px;
+    font-weight: 500;
+    
+}
+.butto:hover{
+    background: #ff5757;
+}
+
+.butto:active{
+    background: #006e58;
+}
+
+#button_text,
+#button_icon {
+    display: inline-flex;
+    align-items: center;
+    padding: 0 20px;
+    color: #fff;
+    height: 100%;
+}
+
+#button_icon{
+    font-size: 2em;
+    background: rgba(0,0,0,0.08);
+}
+
 
 
 
@@ -394,7 +478,7 @@ button:hover{
 @media only screen and (max-width: 550px) {
   .container {
       display: grid;
-    height: 140vh;
+    height: 160vh;
       justify-content: center;
     grid-template-columns: 1fr;
     grid-template-rows: 0.02fr 0.2fr 1.2fr 1.2fr 1.2fr 1.2fr 1.2fr 1.2fr 1fr;
@@ -462,36 +546,47 @@ button:hover{
     
     
     .thumbnail_1{
-    
     height: auto;
     width: 100%;
-    margin-left: -20px !important;
+    margin-left: -80px !important;
     
     }
     
     #content2{
-        margin-top: -40px !important;
-        margin: auto;
-        padding: 25px;
+    margin-top: -40px !important;
+    margin: auto;
+    padding: 25px;
+    padding-top: 30px;
     }
     
     .title{
-        font-size: 18px;
+    font-size: 20px;
     }
     
     
     .downld_btns{
+    display: flex;
     margin-right: 0px !important;
+    margin: auto;
+    justify-content: center;
     }
 
     .dwn_contr{
     margin-right: 0 !important;
-        justify-items: center !important;
-        text-align: center;
+    padding: 20px;
+    text-align: center;
     }
 
+    #myBtn {
+    right: 20px;
+    bottom: 26px;
+    }
 
-
+    footer{
+        width: 460px;
+    }
+    
+    
 }
 /*-------------------------------------------RESPONSIVE MEDIA END-----------------------------------*/
 
@@ -500,7 +595,7 @@ button:hover{
 @media only screen and (max-width: 375px) {
   .container {
       display: grid;
-    height: 160vh;
+    height: 180vh;
       justify-content: center;
     grid-template-columns: 1fr;
     grid-template-rows: 0.02fr 0.2fr 1.2fr 1.2fr 1.2fr 1.2fr 1.2fr 1.2fr 1fr;
@@ -587,14 +682,21 @@ button:hover{
     .downld_btns{
     margin-right: 0px !important;
     }
-
+    
+    .butto{
+        justify-content: center;
+        justify-items: center;
+    }
+    
     .dwn_contr{
     margin-right: 0 !important;
         justify-items: center !important;
         text-align: center;
     }
     
-
+    footer{
+        width: 350px;
+    }
 }
 
 
