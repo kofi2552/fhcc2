@@ -17,13 +17,16 @@
     
 </head>
  
+ 
     
- <body>  
+    
+    
+ <body id="page-top">  
 
     
 <div class="container">
 
-    <nav class="navbar">
+    <nav class="navbar" >
                     <div class="topbar">
                         <img class="image"  src="images/logo.png" Alt="FHCC"> 
 
@@ -85,7 +88,7 @@
             
             <div class="image_contr">
                 
-             <img class="thumbnail_1" src="thumb1.png">
+             <img class="thumbnail_1" src="images/thumb1.png">
                 
             </div>
         </div>
@@ -95,16 +98,24 @@
                 <div class="dwn_contr">
               
                     <div class="title">
-                    Wide As The Sky - Isabel Davis
-                    </div> 
-              
-                <div class="downld_btns">
+                    Wide As The Sky and deep down
+                    </div>
                     
-                        <button class="lbtn" href="audios/Isabel%20Davis%20-%20Wide%20as%20The%20Sky.mp3">Download</button>
+                    <div class="art_name">
+                    Isabel Davis
+                    </div>
                     
-                        <button class="bttn">Not Sung</button>
-                  
-                </div>
+                    <div class="downld_btns">
+                    
+                        <!--<button class="lbtn" href="audios/Isabel%20Davis%20-%20Wide%20as%20The%20Sky.mp3">Download</button>-->
+                    <button class="butto" href=""><span id="button_text">Download</span><span id="button_icon"><ion-icon name="cloud-download-outline">
+                        </ion-icon></span>
+                    
+                    </button>
+                    
+                        <!--<button class="bttn">Video</button>-->
+                      
+                    </div>
               
                 </div>
         </div>
@@ -118,27 +129,7 @@
        
        <div class="containe">
   	 	<div class="rowe">
-            <!----------------------------------------------------------
-  	 		<div class="footer-col">
-  	 			<h4>company</h4>
-  	 			<ul>
-  	 				<li><a href="#">about us</a></li>
-  	 				<li><a href="#">our services</a></li>
-  	 				<li><a href="#">privacy policy</a></li>
-  	 				<li><a href="#">affiliate program</a></li>
-  	 			</ul>
-  	 		</div>
-            
-  	 		<div class="footer-col">
-  	 			<h4>get help</h4>
-  	 			<ul>
-  	 				<li><a href="#">FAQ</a></li>
-  	 				<li><a href="#">shipping</a></li>
-  	 				<li><a href="#">returns</a></li>
-  	 				<li><a href="#">order status</a></li>
-  	 				<li><a href="#">payment options</a></li>
-  	 			</ul>
-  	 		</div>------------------------------------------------------>
+           
   	 		
   	 		<div class="footer-col">
   	 			<h4>follow us online</h4>
@@ -146,12 +137,17 @@
   	 				<a href="#"><i class="fab fa-facebook-f"></i></a>
   	 				<a href="#"><i class="fab fa-twitter"></i></a>
   	 				<a href="#"><i class="fab fa-instagram"></i></a>
-  	 				<a href="#"><i class="fa fa-globe text-white"></i></a>
+  	 				<a href="#"><i class="fa fa-globe"></i></a>
   	 			</div>
   	 		</div>
             <div class="footer-col">
                 
-  	 			<button onclick="topFunction()" id="myBtn"> <i class="fas fa-arrow-up"></i></button>
+  	 			<!--<a onclick="topFunction()" id="myBtn"> <i class="fas fa-arrow-up"></i></a>--->
+                
+                <!-- Scroll to Top Button-->
+                <a id="myBtn" href="#page-top">
+                    <i class="fas fa-angle-up"></i>
+                </a>
   	 		</div>
   	 	</div>
             <a id="footnote" href="https://www.instagram.com/invites/contact/?i=e7n47bcecd9i&utm_content=b5dp6ia">Copyright &copy;  By Visocus .Co</a>
@@ -162,13 +158,12 @@
     
  </div> <!--------------------------------------------------- END OF CONTAINER ----------------------------------------------------------->
 
-    
      
+ <!-----<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>----->     
+       
+ <script>
      
-   
-<script>
-    
-    window.onscroll = function()
+   window.onscroll = function()
     {myFunction()};
 
     var main = document.getElementById("main");
@@ -183,28 +178,12 @@
     else{
         main.classList.remove("sticky");
     }
-    }
-    
-    
+    }  
+     
+     
+</script>  
 
-mybutton = document.getElementById("myBtn");
 
-
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
-
-function topFunction() {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-} 
-</script>
      
 
         
