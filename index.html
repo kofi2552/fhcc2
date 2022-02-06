@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="font-awesome.css">
     <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
     <link rel="stylesheet" href="mainstyle.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
     
     <link href="https://fonts.googleapis.com/css?family=Inter:200,400,600,800,900&display=swap" rel="stylesheet">
@@ -21,12 +21,10 @@
     
     
     
- <body id="page-top">  
+<body id="page-top">  
 
-    
-<div class="container">
-
-    <nav class="navbar" >
+<nav id="navbg">   
+    <div class="navbar" >
                     <div class="topbar">
                         <img class="image"  src="logo.png" Alt="FHCC"> 
 
@@ -45,26 +43,29 @@
                         <span id="btn-txt">Interested in playing admin roles?  <button id="adm_btn" href="">Start Here</button></span>
                         
                     </div>
-    </nav>
-     
+    </div>
+</nav>         
     
     
-    
-     
+<div id="carousel">
     <div id="main">
             
-            
             <div id="slider">
+
 		<figure>
+            
 			<img src="slider1.png">
 			<img src="slider3.png">
 			<img src="slider1.png">
 			<img src="slider2.png">
+
 		</figure>
                 
 	       </div>
-        
     </div>
+
+</div>
+
        <!-- <div class="annouce">
             
             
@@ -94,109 +95,107 @@
         <!----------SONG 1------------>
         
         
+<div id="site-container"> 
+
+        <div class="contents">
+
+                <div class="content1">
             
-        <div id="content1">
-            
-            <div class="image_contr">
+                        <div class="image_contr">
                 
-             <img class="thumbnail_1" src="thumb1.png">
+                        <img src="thumb1.png" Alt="">
                 
-            </div>
-        </div>
+                        </div>
+                </div>
         
         
-        <div id="content2">
-                <div class="dwn_contr">
+                <div class="content2">
+
+                        <div class="dwn_contr">
               
-                    <div class="title">
-                    Wide As The Sky and deep down
-                    </div>
+                        <div class="title">
+                            Wide As The Sky and Down Below
+                        </div>
                     
-                    <div class="art_name">
-                    Isabel Davis
-                    </div>
+                    <span id="art-name">Isabel Davis</span>
                     
                     <div class="downld_btns">
                     
-                        <!--<button class="lbtn" href="audios/Isabel%20Davis%20-%20Wide%20as%20The%20Sky.mp3">Download</button>-->
-                    <button class="butto" href=""><span id="button_text">Download</span><span id="button_icon"><ion-icon name="cloud-download-outline">
-                        </ion-icon></span>
+                        <button class="butto" href=""><span id="button_text">Download</span><span id="button_icon"><ion-icon name="cloud-download-outline">
+                            </ion-icon></span>
+                        </button>
                     
-                    </button>
-                    
-                        <!--<button class="bttn">Video</button>-->
-                      
+                        <button class="bttn">Video</button>
+                        
                     </div>
               
                 </div>
-        </div>
 
-     <!---</div>
+                
+            </div>
+            
+        </div>
+        <div class="pagination">
+            <a href="">&laquo;</a>
+            <a href="" class="active">1</a>
+            <a href="">2</a>
+            <a href="">3</a>
+            <a href="">4</a>
+            <a href="">&raquo;</a>
+        </div>
+</div>
         <!-------------------------------------------------------------------------------------------------->
 
         
         
-   <footer>
-       
-       <div class="containe">
-  	 	<div class="rowe">
+   <footer id="footer-bottom">
+
+       <div class="container">
+            <h6>follow us online</h6>
+
+  	 	<div class="f-items">
            
-  	 		
   	 		<div class="footer-col">
-  	 			<h4>follow us online</h4>
   	 			<div class="social-links">
   	 				<a href="#"><i class="fab fa-facebook-f"></i></a>
   	 				<a href="#"><i class="fab fa-twitter"></i></a>
-  	 				<a href="#"><i class="fab fa-instagram"></i></a>
-  	 				<a href="#"><i class="fa fa-globe"></i></a>
+  	 				
   	 			</div>
   	 		</div>
+
             <div class="footer-col">
-                
+                <div class="social-links">
   	 			<!--<a onclick="topFunction()" id="myBtn"> <i class="fas fa-arrow-up"></i></a>--->
-                
-                <!-- Scroll to Top Button-->
-                <a id="myBtn" href="#page-top">
-                    <i class="fas fa-angle-up"></i>
-                </a>
-  	 		</div>
+                   <a href="#"><i class="fab fa-instagram"></i></a>
+                   <a href="#"><i class="fa fa-globe"></i></a>
+                </div>
+            </div>
+
   	 	</div>
-            <a id="footnote" href="https://www.instagram.com/invites/contact/?i=e7n47bcecd9i&utm_content=b5dp6ia">Copyright &copy;  By Visocus .Co</a>
-  	 </div>
-       
+
+  	 	
+            <a id="footnote" href="https://www.instagram.com/invites/contact/?i=e7n47bcecd9i&utm_content=b5dp6ia">Copyright &copy;  By Viscous Co</a>
+        </div>
+
   </footer>
 
-    
- </div> <!--------------------------------------------------- END OF CONTAINER ----------------------------------------------------------->
+
+    <!-- Scroll to Top Button-->
+    <a id="myBtn" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+  <!--------------------------------------------------- END OF CONTAINER ----------------------------------------------------------->
 
      
- <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>   
+<!---<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>   
        
- <script>
-     
-   window.onscroll = function()
-    {myFunction()};
-
-    var main = document.getElementById("main");
-
-    var sticky = main.offsetTop;
-
-    function myFunction(){
-    
-    if (window.pageYOffset >= sticky){
-        main.classList.add("sticky")
-    }
-    else{
-        main.classList.remove("sticky");
-    }
-    }  
-     
-     
-</script>  
+ <script src="stickynav.js"></script>---->  
+ <script src="backtop.js"></script>  
 
 
      
 
         
-    </body>
+</body>
 </html>
