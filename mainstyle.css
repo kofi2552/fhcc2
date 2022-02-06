@@ -182,6 +182,8 @@ nav{
 #slider figure img {
 	width: 20%;
 	float: left;
+	border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 @keyframes slider {
